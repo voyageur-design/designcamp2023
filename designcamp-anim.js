@@ -138,9 +138,9 @@ ScrollTrigger.matchMedia({
   "(min-width: 991px)": function () {
     let tlB = gsap.timeline({
         scrollTrigger: {
-          trigger: ContainerRef,
+          trigger: ".page-wrapper",
           start: "top 0%",
-          end: "bottom 15%",
+          end: "top 5%",
           toggleActions: "restart none none reverse",
           markers: false,
           scrub: 1,
