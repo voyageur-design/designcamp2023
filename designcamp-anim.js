@@ -62,8 +62,8 @@ $(document).ready(function () {
     .to("[banner]", {
       width: "8rem",
       scrollTrigger: {
-        trigger: ".location_section",
-        start: "bottom bottom",
+        trigger: ".page-wrapper",
+        start: "top 0%",
         scrub: true,
       },
     })
@@ -138,7 +138,7 @@ ScrollTrigger.matchMedia({
   "(min-width: 991px)": function () {
     let tlB = gsap.timeline({
         scrollTrigger: {
-          trigger: ".page-wrapper",
+          trigger: ".hero",
           start: "top 0%",
           end: "top 5%",
           toggleActions: "restart none none reverse",
@@ -160,7 +160,7 @@ ScrollTrigger.matchMedia({
         scrollTrigger: {
           trigger: ".hero",
           start: "top 0%",
-          end: "bottom 15%",
+          end: "top 5%",
           toggleActions: "restart none none reverse",
           markers: false,
           scrub: 1,
